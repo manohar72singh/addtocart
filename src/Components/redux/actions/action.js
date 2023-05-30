@@ -20,3 +20,10 @@ export const DECRESE_QUNTY_ONE =(item) =>{
         payload:item
     }
 }
+
+// export const SHOWPRODUCT =(item) =>{
+//     return{
+//         type: "SHOWPRODUCT",
+//         payload:item
+//     }
+// }

@@ -1,3 +1,4 @@
+/* eslint-disable no-fallthrough */
 const INIT_STATE = {
     carts: []
 };
@@ -16,6 +17,14 @@ export const cartreducer = (state = INIT_STATE, action) => {
                     carts: [...state.carts, temp]
                 }
             }
+            
+        // case "SHOWPRODUCT":
+        //     // const finditemIndex = state.carts.findIndex((item) => item.id === action.payload.id);
+        //     return{
+        //         ...state,
+        //         carts:[...state, action.payload]
+        //     }
+            
             
 
         case "REMOVE_CART":
@@ -42,7 +51,10 @@ export const cartreducer = (state = INIT_STATE, action) => {
                     carts: data
                 }
             }
-           
+        
+        
+
+            
         default:
             return state
     }
